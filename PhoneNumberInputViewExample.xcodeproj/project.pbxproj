@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA3D96512935747700DDDA10 /* PhoneNumberInputView in Frameworks */ = {isa = PBXBuildFile; productRef = FA3D96502935747700DDDA10 /* PhoneNumberInputView */; };
 		FAB1916A29350CCA005EBC9C /* PhoneNumberInputViewExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1916929350CCA005EBC9C /* PhoneNumberInputViewExampleApp.swift */; };
 		FAB1916C29350CCA005EBC9C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1916B29350CCA005EBC9C /* ContentView.swift */; };
 		FAB1916E29350CCB005EBC9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB1916D29350CCB005EBC9C /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA3D96512935747700DDDA10 /* PhoneNumberInputView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +39,7 @@
 			children = (
 				FAB1916829350CCA005EBC9C /* PhoneNumberInputViewExample */,
 				FAB1916729350CCA005EBC9C /* Products */,
+				FAB1917929350D2C005EBC9C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +70,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		FAB1917929350D2C005EBC9C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,6 +93,9 @@
 			dependencies = (
 			);
 			name = PhoneNumberInputViewExample;
+			packageProductDependencies = (
+				FA3D96502935747700DDDA10 /* PhoneNumberInputView */,
+			);
 			productName = PhoneNumberInputViewExample;
 			productReference = FAB1916629350CCA005EBC9C /* PhoneNumberInputViewExample.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +124,9 @@
 				Base,
 			);
 			mainGroup = FAB1915D29350CCA005EBC9C;
+			packageReferences = (
+				FA3D964F2935747700DDDA10 /* XCRemoteSwiftPackageReference "PhoneNumberInputView" */,
+			);
 			productRefGroup = FAB1916729350CCA005EBC9C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -195,7 +211,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +265,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -275,6 +291,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,6 +321,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,6 +357,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FA3D964F2935747700DDDA10 /* XCRemoteSwiftPackageReference "PhoneNumberInputView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alex1704/PhoneNumberInputView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FA3D96502935747700DDDA10 /* PhoneNumberInputView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA3D964F2935747700DDDA10 /* XCRemoteSwiftPackageReference "PhoneNumberInputView" */;
+			productName = PhoneNumberInputView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FAB1915E29350CCA005EBC9C /* Project object */;
 }
